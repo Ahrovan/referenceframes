@@ -1,0 +1,23 @@
+<package>
+	<name>referenceFrames</name>
+	<version>1.0.0</version>
+	<description>
+    		This package is referenceFrames.
+	</description>
+	<author email="jl.sanchez@upm.es">Jose Luis Sanchez-Lopez</author>
+	<maintainer email="jl.sanchez@upm.es">Jose Luis Sanchez-Lopez</maintainer>
+  	<license>BSD</license>
+	<url>http://ros.org/wiki/referenceFrames</url>
+
+  	<buildtool_depend>catkin</buildtool_depend>
+
+
+  	<build_depend>lib_cvgutils</build_depend>
+
+	<run_depend>lib_cvgutils</run_depend>
+
+
+
+</package>
+
+
