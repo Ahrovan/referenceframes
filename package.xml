@@ -12,12 +12,6 @@
   	<buildtool_depend>catkin</buildtool_depend>
 
 
-  	<build_depend>lib_cvgutils</build_depend>
-
-	<run_depend>lib_cvgutils</run_depend>
-
-
-
 </package>
 
 

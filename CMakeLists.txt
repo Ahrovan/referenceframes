@@ -46,7 +46,7 @@ set(REFERENCEFRAMES_HEADER_FILES
 
 
 find_package(catkin REQUIRED
-		COMPONENTS lib_cvgutils)
+		)
 
 find_package(OpenCV REQUIRED)
 
@@ -55,7 +55,6 @@ catkin_package(
         INCLUDE_DIRS ${REFERENCEFRAMES_INCLUDE_DIR}
         LIBRARIES referenceFrames
         DEPENDS OpenCV
-        CATKIN_DEPENDS lib_cvgutils
   )
 
 
@@ -71,9 +70,3 @@ add_dependencies(referenceFrames ${catkin_EXPORTED_TARGETS})
 target_link_libraries(referenceFrames ${OpenCV_LIBS})
 target_link_libraries(referenceFrames ${catkin_LIBRARIES})
 
-
-link_directories(${LIBRARY_OUTPUT_PATH})
-add_executable(${PROJECT_NAME}_code_tests ${REFERENCEFRAMES_SOURCE_DIR}/code_tests.cpp)
-add_dependencies(${PROJECT_NAME}_code_tests ${catkin_EXPORTED_TARGETS})
-target_link_libraries(${PROJECT_NAME}_code_tests referenceFrames)
-target_link_libraries(${PROJECT_NAME}_code_tests ${OpenCV_LIBS})
